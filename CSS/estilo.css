@@ -1,0 +1,309 @@
+/*Fontes immportadas*/
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&display=swap');
+/*
+
+font-family: "Fraunces", serif;
+font-family: "Oswald", sans-serif;
+font-family: "Lato", sans-serif;
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*Estilizações padrão*/
+
+
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*Estilizando topo da página*/
+
+
+.topo{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #604829;
+    height: 100px;
+    z-index: 1;
+}
+
+.topo img{
+    width: 100px;
+    position: absolute;
+    left: 15%;
+}
+
+.menu-lista{
+    position: absolute;
+    top: 35%;
+    right: 15%;
+}
+
+.menu-lista li{
+    display: inline;
+}
+
+.menu-lista-links{
+    font-size: 18px;
+    color: #c4a47c;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-family: 'Oswald',sans-serif;
+    margin-right: 20px;
+    text-shadow: 3px 5px 2px #000000;
+    text-transform: uppercase;
+}
+
+/*Finalizando topo da página*/
+
+/*Estilizando seçãao banner do site*/
+
+.container-banner{
+    height: 100vh;
+    background-image: url('../IMG/parallax-imagem1.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.container-banner h1{
+    font-size: 100px;
+    color: #fff;
+    position: absolute;
+    top: 45%;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+/*finalizando estilização da seção banner*/
+
+/*Iniciando seção de informações*/
+
+
+/*Containers resposáveis por agrupar os textos da seçao de informação da página*/
+.container-texto{
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.container-texto-titulo{
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: #c4a47c;
+    letter-spacing: 2px;
+}
+
+.container-texto-corpo{
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    padding: 0 20px;
+    max-width: 1024px;
+    text-align: center;
+    margin: 20px auto;
+    color: #666;
+}
+
+/*Contiainers responsáveis pelas imagens da seção de informações da página*/
+
+.container-imagem{
+    height: 50vh;
+    position: relative;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.imagem-01{
+    background-image: url('../IMG/parallax-imagem2.jpg'); 
+}
+
+.imagem-02{
+    background-image: url('../IMG/parallax-imagem3.jpg');
+}
+
+.container-imagem-titulo{
+    position: absolute;
+    top: 45%;
+    font-family: 'Fraunces',sans-serif;
+    font-size: 24px;
+    font-style: italic;
+}
+
+.container-contato-titulo, .container-imagem-titulo, .container-contato-menu{
+    width: 500px;
+    text-align: center;
+    color: #fff;
+    background-color: #604829;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+/*Finalizando seçãode informações*/
+
+/*Inicinado seção de contatos*/
+
+.container-contato{
+    background-image: url('../IMG/parallax-imagem4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+.container-contato-titulo, .container-contato iframe, .container-contato-menu, .container-imagem-titulo,
+.container-horario-titulo, .container-horario-lista, .container-horario-lista-barra {
+    left: 0;
+    right: 0;
+}
+
+.container-contato-titulo{
+    position: relative;
+    top: 10%;
+    font-family: 'Oswald',sans-serif;
+    font-size: 24px;
+}
+
+.container-contato iframe{
+    position: absolute;
+    top: 23%;
+    margin: 0 auto;
+}
+
+.container-contato-menu{
+    position: absolute;
+    bottom: 8%;
+}
+
+.container-contato-menu p{
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 3px 5px 2px #000000;
+}
+
+/*Finalizando seção cotato*/
+
+/*iniciando seção horario*/
+
+.container-horario{
+    background-image: url('../IMG/cafeteria.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 85vh;
+    position: relative;
+}
+
+.container-horario-titulo{
+    font-size: 24px;
+    letter-spacing: 8px;
+    font-family: "Oswald", sans-serif;
+    position: absolute;
+    top: 20%;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+
+.container-horario-lista{
+    font-size: 18px;
+    font-family: 'Oswald',sans-serif;
+    position: absolute;
+    bottom: 20%;
+    margin: 0 auto;
+    max-width: 768px;
+}
+
+
+.container-horario-lista ul{
+    width: 100%;
+    position: relative;
+}
+
+.container-horario-lista li{
+    position: relative;
+}
+
+.container-horario-lista-titulo{
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.container-horario-lista-barra{
+    position: absolute;
+    top: 50%;
+    width: 70%;
+    height: 1px;
+    background-color: #acacac;
+    margin: 0 auto;
+}
+
+.container-horario-lista-corpo, .container-horario-lista span{
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    font-weight: 700;
+}
+
+.container-horario-lista-corpo{
+    color: #acacac;
+}
+
+/*Finalizando seçao de horário*/
+
+/*Iniciando rodapé*/
+
+.container-rodape{
+    background-color: #000000;
+    padding: 20px 0;
+    position: relative;
+}
+
+.container-rodape-corpo{
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 32px;
+    font-weight: bold;
+}
+
+.texto-destaque{
+    color: #c4a47c;
+}
+
+/*Finalizando rodapé*/
+
+/*botão flutuante*/
+
+.button-retorno{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 80px;
+    right: 50px;
+    background-color: #c4a47c;
+}
